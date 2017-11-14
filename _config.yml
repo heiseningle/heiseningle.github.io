@@ -1,6 +1,6 @@
 # Site settings
 title: Zz's Blog
-SEOTitle: 思想集合 | Zz's Blog
+SEOTitle: 思考合集 | Zz's Blog
 header-img: img/post-bg-desk.jpg
 email: zhangzheng_jensen@hotmail.com
 description: "Mind Sparkles"
@@ -96,6 +96,6 @@ friends: [
         href: "http://hadley.nz/"
     },{
         title: "My self",
-        href: "heiseningle.github.io"
+        href: ""
     }
 ]
