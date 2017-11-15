@@ -13,12 +13,12 @@ tags:
 
 
 ## Preface
-从2015年到2017年，遇到不少需要处理文本数据的情景：ad的文本处理、销售部门拼接、文本脏数据替换、公司实体资质替换等。
+- 从2015年到2017年，遇到不少需要处理文本数据的情景：ad的文本处理、销售部门拼接、文本脏数据替换、公司实体资质替换等。
 同时，应用的环境也不尽相同：在DB里、在R、甚至在excel里面。
 因此，整理了如下的bullet point和references供查阅
 
 ## 正则引擎分类
-正则引擎分成两类，
+- 正则引擎分成两类，
     - deterministic finite automation (DFA)
     - non- deterministic finite automation (NFA)
         - POSIX NFA
@@ -88,13 +88,15 @@ look backward
 ## Refs
 - 入门读物：http://gold.xitu.io/post/582dfcfda22b9d006b726d11
 
+- 原理：http://blog.csdn.net/lxcnn/article/details/4304651
+
 - 经典读物：http://deerchao.net/tutorials/regex/regex.htm
 
 - 进阶读物：https://segmentfault.com/a/1190000000426455
 
-- interactive tutorial: https://regex101.com /
+- interactive tutorial: https://regex101.com/
 
-- 图像化正则：https://regexper.com/#%2F(%5Cd)(%3F%3D(%3F%3A%5Cd%7B3%7D)%2B%24)%2Fg
+- 图像化正则：https://regexper.com/
 
 - R正则：https://www.regular-expressions.info/rlanguage.html
 
