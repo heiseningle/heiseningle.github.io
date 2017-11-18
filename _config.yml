@@ -11,8 +11,8 @@ github_repo: "https://github.com/heiseningle/heiseningle.github.io.git" # you co
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Be my mirror my sword and shield"
-sidebar-avatar: img/avatar-m     # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "To be a rule changer with data skill on hand & product sense on mind"
+sidebar-avatar: /img/avatar-m     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
