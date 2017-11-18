@@ -1,6 +1,7 @@
 ---
 layout:     post
-title:      通过github-pages搭建blog
+title:      通过github-pages搭建blog
+subtitle: 
 date:       2017-11-18
 author:     zz
 header-img: img/post-bg-ios9-web.jpg
