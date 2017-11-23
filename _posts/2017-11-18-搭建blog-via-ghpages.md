@@ -42,7 +42,7 @@ Configuration file: /Users/zhengzhang/Desktop/Git/heiseningle/heiseningle.github
 
 ## 概念梳理
 
-** Rails **
+**Rails**
 - 是Ruby语言比较成熟的一个框架，使用它可以快速将MVC三层搭好
 
 Homebrew
@@ -50,27 +50,25 @@ git github
 
 Ruby RubyGem rvm rvben 
 
-bundle jekyll
 
-** bundler **
+**bundler**
 -  a gem to bundle gems make sure every ruby applications run the same code on each machine.
 -  bundler能做到这一点是因为不但安装用户指定的Gems，并且将这些Gems相关的所有以来gems都安装了。并且，在安装之前会检查每一个gem的可用性和版本，确保是能够同时装载的，并对版本进行记录。由此，保证了所有用户都是在用同一套code
+- 常用bundle exec：所有依赖一起加载
+- bundler: Bundler maintains a consistent environment for ruby applications. It tracks an application’s code and the gems it needs to run, so that an application will always have the exact gems (and versions) that it needs to run. 这是一个ruby程序，作用是根据gemfile声明的source和gem下载所有相关的gem。关于bundler： http://xiajian.github.io/2014/10/22/bundle
 
-- bundle
-- Gemfile 
-？是一个什么概念：是一个文本文件，里面标注了source，指向下载网站；接着指明了需要的包；bundler从gemfile了解要下载的包，进而将所有denpendencies下载下来 
-？和ruby gem之间是怎么协同工作的？
-？常用的比如 bundle exec等命令是干嘛的？
-
-- Gemfile: a file located on root directory of your project that defines which source to find gems and dependencies among gems
+- **Gemfile**
+- 是一个什么概念：是一个文本文件，里面标注了source，指向下载网站；接着指明了需要的包；bundler从gemfile了解要下载的包，进而将所有denpendencies下载下来
+- 每次运行bundle install后，会对本文件目录下的Gemfile进行解析，下载所有列示的gem和dependencies
+- 生成Gemlock文件，将所用到的所有Gem和其版本都记录下来
+- a file located on root directory of your project that defines which source to find gems and dependencies among gems
 关于Gemfile：https://ruby-china.org/topics/26655
 
-- bundler: Bundler maintains a consistent environment for ruby applications. It tracks an application’s code and the gems it needs to run, so that an application will always have the exact gems (and versions) that it needs to run. 这是一个ruby程序，作用是根据gemfile声明的source和gem下载所有相关的gem
-关于bundler： http://xiajian.github.io/2014/10/22/bundle
-
-- bundle 和 Gemfile配合生成该目录（项目）的指定Gems及其dependencies 
+- **bundle 和 Gemfile配合生成该目录**的指定Gems及其dependencies
 - bundle 会根据 Gemfile 生成 Gemfile.lock，里面锁定了 gem 的版本依赖，在运行的时候会载入指定版本的 gem。
 - bundle的作用范围在一个目录里（项目），在某个目录中有Gemfile文件，再运行bundle install，才会根据这个bundle的描述去生成bundle lock，并且bundle lock的作用域只在本目录下,出了本目录，若bundle lock就会报错：“Could not locate Gemfile or .bundle/ directory”。同理，如果没有Gemfile文件在同一个目录，但如果运行bundle install，则会报错“Could not locate Gemfile”
+
+
 
 **Jekyll **
 - Jekyll的核心其实就是一个文本的转换引擎，用你最喜欢的标记语言写文档，可以是Markdown、Textile或者HTML等等，再通过layout将文档拼装起来，根据你设置的URL规则来展现，这些都是通过严格的配置文件来定义，最终的产出就是web页面。    
