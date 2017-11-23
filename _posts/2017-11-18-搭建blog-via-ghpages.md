@@ -57,25 +57,25 @@ Ruby RubyGem rvm rvben
 - 常用bundle exec：所有依赖一起加载
 - bundler: Bundler maintains a consistent environment for ruby applications. It tracks an application’s code and the gems it needs to run, so that an application will always have the exact gems (and versions) that it needs to run. 这是一个ruby程序，作用是根据gemfile声明的source和gem下载所有相关的gem。关于bundler： http://xiajian.github.io/2014/10/22/bundle
 
-- **Gemfile**
+**Gemfile**
 - 是一个什么概念：是一个文本文件，里面标注了source，指向下载网站；接着指明了需要的包；bundler从gemfile了解要下载的包，进而将所有denpendencies下载下来
 - 每次运行bundle install后，会对本文件目录下的Gemfile进行解析，下载所有列示的gem和dependencies
 - 生成Gemlock文件，将所用到的所有Gem和其版本都记录下来
 - a file located on root directory of your project that defines which source to find gems and dependencies among gems
 关于Gemfile：https://ruby-china.org/topics/26655
 
-- **bundle 和 Gemfile配合生成该目录**的指定Gems及其dependencies
+**bundle 和 Gemfile配合生成该目录**的指定Gems及其dependencies
 - bundle 会根据 Gemfile 生成 Gemfile.lock，里面锁定了 gem 的版本依赖，在运行的时候会载入指定版本的 gem。
 - bundle的作用范围在一个目录里（项目），在某个目录中有Gemfile文件，再运行bundle install，才会根据这个bundle的描述去生成bundle lock，并且bundle lock的作用域只在本目录下,出了本目录，若bundle lock就会报错：“Could not locate Gemfile or .bundle/ directory”。同理，如果没有Gemfile文件在同一个目录，但如果运行bundle install，则会报错“Could not locate Gemfile”
 
 
 
-**Jekyll **
+**Jekyll**
 - Jekyll的核心其实就是一个文本的转换引擎，用你最喜欢的标记语言写文档，可以是Markdown、Textile或者HTML等等，再通过layout将文档拼装起来，根据你设置的URL规则来展现，这些都是通过严格的配置文件来定义，最终的产出就是web页面。    
 
 
-** Homebrew **
-使用说明： https://segmentfault.com/a/1190000004353419
+**Homebrew**
+- 使用说明： https://segmentfault.com/a/1190000004353419
 > Homebrew是OS X上强大的包管理器，为系统软件提供了非常方便的安装方式，独特式的解决了包的依赖问题，并不再需要烦人的sudo，一键式编译，无参数困扰。
 
 > Homebrew将本地的/usr/local初始化为git的工作树，并将目录所有者变更为当前所操作的用户，以后的操作将不需要sudo。
@@ -95,7 +95,7 @@ brew
 
 ```
 
-** Rubygems **  
+**Rubygems**  
 - RubyGem is a package manager for the Ruby programming language that provides a standard format for distributing Ruby programs and libraries 
 - Gem: a packed Ruby program or application. using gem install command means using Rubygems to install gems.
 > 包管理工具一般有以下的功能：
