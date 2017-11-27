@@ -48,7 +48,8 @@ plugins: [jekyll-paginate]
 markdown: kramdown    # use Github Flavored Markdown !important
 highlighter: rouge
 kramdown:
-  input: GFM                         
+  input: GFM
+  hard_wrap: false                      
 
 
 # 评论系统
